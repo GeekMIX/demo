@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+body{
+	background-image:url(../img/image1.jpg);
+	background-size:100% 100%;
+}
+
+.button{
+	width:55px;
+	height:65px;
+	background:url(../img/pick1.png) center center;
+	display:block;
+	position:fixed;
+	top:0px;
+	right:10px;	
+}
+
+.button:hover{
+	animation:move 0.7s ease 2; /* 动画名称 动画时长  动画执行速度  执行次数*/
+}
+
+@keyframes move{   /* 关 键 帧*/
+	0%{ top:0px;}
+	50%{ top:20px;}
+	100%{ top:0px;}
+}
+
+#hf{
+	width:100%;
+	height:200px;
+	background:rgba(0,0,0,0.3);
+}
+
+#hf .con{
+	width:1200px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+	border:0px solid #f00;
+}
+
+#hf .con .left{
+	position:absolute;
+	top:70px;
+	left:0px;
+	cursor:pointer;
+}
+
+
+#hf .con .right{
+	position:absolute;
+	top:70px;
+	right:0px;
+	cursor:pointer;
+  
+}
+
+.con .scroll{
+	width:1080px;
+	height:200px;
+	overflow:hidden;
+	margin:0 auto;
+	position:relative;
+	border:px solid #f00;
+}
+
+.con .scroll .scrollCon{
+	wigth:2160px;
+	height:200px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.con .scroll .scrollCon ul li{
+	list-style:none;
+	width:192px;
+	height:108px;
+	border:3px solid #fff;
+	float:left;
+	margin:40px 9px;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
